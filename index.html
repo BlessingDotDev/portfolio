@@ -20,23 +20,23 @@
     </p>
 
     <ul class="nav-container">
-      <li>
-        <a href="#">Home</a>
+      <li class="js-nav-link">
+        <a href="#home">Home</a>
       </li>
-      <li>
-        <a href="#">About me</a>
+      <li class="js-nav-link">
+        <a href="#about-me">About me</a>
       </li>
-      <li>
-        <a href="#">Projects</a>
+      <li class="js-nav-link">
+        <a href="#projects">Projects</a>
       </li>
-      <li>
-        <a href="#">Contact</a>
+      <li class="js-nav-link">
+        <a href="#contact">Contact</a>
       </li>
     </ul>
   </div>
 
   <div class="main-container">
-    <div class="section home-container">
+    <div id="home" class="section home-container">
       <div class="introduction">
         <p>
           <span class="big-words">
@@ -53,7 +53,7 @@
       </div>
     </div>
 
-    <div class="skills-section">
+    <div id="skills" class="skills-section">
       <p class="tech-tittle">
         Skills & Technologies
       </p>
@@ -86,7 +86,7 @@
       </div>
     </div>
 
-    <div class="section about-me-container">
+    <div id="about-me" class="section about-me-container">
       <div class="about-me-image">
         <img  class="coding-image" src="images/coding.png" alt="coding animated man">
       </div>
@@ -104,7 +104,7 @@
       </div>
     </div>
 
-    <div class="section projects-container">
+    <div id="projects" class="section projects-container">
       <p class="projects-title">Projects</p>
       
       <div class="projects-grid">
@@ -128,7 +128,7 @@
     </div>
   </div>
 
-  <div class="footer-container">
+  <div id="contact" class="footer-container">
     <p class="location">South Africa</p>
     
     <div class="footer-flex">
@@ -140,12 +140,14 @@
 
       <ul class="links">
         <li class="first-link">Quick Links</li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">About me</a></li>
-        <li><a href="#">Project</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about-me">About me</a></li>
+        <li><a href="#projects">Project</a></li>
       </ul>
     </div>
   </div>
+
+  <script src="scripts/main.js"></script>
 </body>
 </html>
