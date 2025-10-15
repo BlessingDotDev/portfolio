@@ -14,7 +14,7 @@
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns:1fr 1fr 1fr;
+  grid-template-columns:1fr;
 
   padding: 30px;
   max-width: 1400px;
@@ -26,7 +26,7 @@
   height: auto;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  overflow: hidden;
+  min-height: 50%;
 }
 
 .project-image {
@@ -63,7 +63,7 @@
 .project-description {
   color: white;
   padding: 15px;
-  font-size: 17px;
+  font-size: var(--font-size-medium);
 }
 
 .link-button {
@@ -84,12 +84,18 @@
 
 @media only screen and (max-width: 997px) {
   .projects-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-description {
+    color: white;
+    padding: 15px;
+    font-size: var(--font-size-small);
   }
 }
