@@ -34,6 +34,25 @@
   flex-wrap: wrap;
 }
 
+.contact-me-button {
+  color: black;
+  background-color: transparent;
+  font-size: var(--font-size-medium);
+  padding: 0.45em;
+  margin-top: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 0.21em;
+  transition: color 0.15s, background-color 0.15s;
+}
+
+.contact-me-button:hover {
+  border-color: transparent;
+  color: white;
+  background-color: var(--primary-color);
+}
+
 .image-container {
  height: 300px;
 }
