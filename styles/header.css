@@ -27,13 +27,10 @@
   padding-right: 0.65rem;
 }
 
-.nav-container li {
+.nav-container li a {
+  letter-spacing: 3px;
   cursor: pointer;
   padding: 15px 0;
-  letter-spacing: 3px;
-}
-
-.nav-container li a {
   font-size: var(--font-size-medium);
   text-decoration: none;
   color: white;
@@ -59,7 +56,6 @@
   .first-letter {
     font-size: var(--font-size-medium);
   }
-
 }
 
 @media only screen and (max-width: 600px) {
