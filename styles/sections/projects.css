@@ -75,6 +75,7 @@
   cursor: pointer;
   background-color: rgb(85, 71, 122);
   transition: background-color 0.15s;
+  width: 100%;
 }
 
 .link-button:hover {
