@@ -39,7 +39,7 @@
   text-wrap: nowrap;
 }
 
-.nav-container li:hover a {
+.nav-container li:active a {
   transform: translateY(-10px);
   color: rgb(215, 215, 215);
 }
@@ -68,6 +68,13 @@
     justify-content: space-evenly;
     column-gap: 0px;
     padding-right: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  .nav-container li:hover a {
+    transform: translateY(-10px);
+    color: rgb(215, 215, 215);
   }
 }
 
