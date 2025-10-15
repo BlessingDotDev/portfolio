@@ -1,0 +1,157 @@
+.main-container {
+  margin: auto;
+}
+
+.section {
+  min-height: 100dvh;
+  width: 100%;
+}
+
+.home-container {
+  padding: 0 200px;
+  background-image: linear-gradient(to right, rgb(255, 255, 255), var(--secondary-color));
+
+  display: grid;
+  grid-template-columns: 500px 350px;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduction {
+  font-size: var(--font-size-medium);
+  line-height: 1.5em;
+  letter-spacing: 2px;
+}
+
+.big-words {
+  font-size: var(--font-size-larger);
+  font-weight: bold;
+  line-height: 50px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-container {
+ height: 300px;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: column;;
+  align-items: center;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.tech-tittle {
+  font-size: var(--font-size-large);
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.tech-flex {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  width: 90%;
+  max-width: 900px;
+}
+
+.tech-box {
+  text-align: center;
+}
+
+.tech-logo {
+  height: 50px;
+}
+
+.logo-name {
+  font-size: 13px;
+  padding-top: 4px;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 997px) {
+
+  .home-container {
+    padding: 0 150px;
+    grid-template-columns: 450px 300px;
+  }
+
+  .introduction {
+    font-size: var(--font-size-medium);
+    line-height: 25px;
+  }
+
+  .big-words {
+    font-size: var(--font-size-large);
+    line-height: 40px;
+  }
+
+  .image-container {
+    height: 250px;
+    }
+
+  .tech-tittle {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 830px ) {
+  .home-container {
+    padding: 20px ;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .introduction {
+    text-align: center;
+  }
+
+  .big-words {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-container {
+    height: 200px;
+    width: 250px
+    }
+
+  .skills-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .tech-tittle {
+    margin-bottom: 30px;
+  }
+  
+  .tech-logo {
+    height: 30px;
+  }
+
+  .logo-name {
+    font-size: 14px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .tech-flex {
+    grid-template-columns: repeat(3, auto);
+    row-gap: 30px;
+    max-width: 300px;
+  }
+}
