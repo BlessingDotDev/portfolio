@@ -3,9 +3,15 @@
   background-color: black;
 }
 
+.icon {
+  height: 0.9rem;
+  background-color: white;
+
+}
+
 .location {
   text-align: end;
-  padding: 10px 50px 0 0;
+  padding: 0.625em 3.125em 0 0;
   color: rgb(255, 255, 255);
   font-size: var(--font-size-small);
 }

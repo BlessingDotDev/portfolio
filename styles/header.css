@@ -47,6 +47,7 @@
 @media only screen and (max-width: 997px) {
   .nav-container li a{
     font-size: var(--font-size-base);
+    letter-spacing: 1px;
   }
 
   .header-name {
