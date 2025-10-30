@@ -5,7 +5,6 @@
 
 .icon {
   height: 0.9rem;
-  background-color: white;
 
 }
 
@@ -51,6 +50,12 @@ li, a {
 .contact-details li a:hover,
 .links li a:hover {
   color: blue
+}
+
+.contact-details a {
+  display: flex;
+  align-items: center;
+  column-gap: 0.3rem;
 }
 
 

@@ -9,7 +9,7 @@
 
 .home-container {
   padding: 0 200px;
-  background-image: linear-gradient(to right, rgb(255, 255, 255), var(--secondary-color));
+  background-image: linear-gradient(to right, var(--primary-start-color), var(--secondary-color));
 
   display: grid;
   grid-template-columns: 500px 350px;
@@ -99,6 +99,28 @@
   font-size: 13px;
   padding-top: 4px;
   pointer-events: none;
+}
+
+.toggle-button {
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 1rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  z-index: 2000;
+}
+
+.toggle-button img {
+  height: 1rem;
 }
 
 @media only screen and (max-width: 997px) {

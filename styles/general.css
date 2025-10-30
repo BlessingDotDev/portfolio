@@ -9,14 +9,23 @@
 }
 
 :root {
+  --primary-start-color: white;
   --primary-color: rgb(105, 79, 17);
   --secondary-color: rgb(255, 198, 123);
-
+  
   --font-size-small: 0.875rem;
   --font-size-base: 1rem;
   --font-size-medium: 1.25rem;
   --font-size-large: 2rem;
   --font-size-larger: 2.5rem;
+}
+
+/* Dark theme overrides */
+.dark-mode {
+  --primary-start-color: rgb(32, 32, 32);
+   --secondary-color: rgb(192, 125, 38);
+  color: white;
+  background-color: rgb(32, 32, 32);
 }
 
 html {

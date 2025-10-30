@@ -1,5 +1,5 @@
 .projects-container {
-  background-image: linear-gradient(to bottom, white, rgb(255, 198, 123));
+  background-image: linear-gradient(to bottom, var(--primary-start-color), var(--secondary-color));
   margin-top: 100px;
 }
 

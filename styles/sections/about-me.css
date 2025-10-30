@@ -1,5 +1,5 @@
 .about-me-container {
-  background-image: linear-gradient(to left, white, rgb(255, 198, 123));
+  background-image: linear-gradient(to left, var(--primary-start-color), var(--secondary-color));
 
   display: grid;
   grid-template-columns: 300px 400px;
