@@ -24,10 +24,18 @@
 .dark-mode {
   --primary-start-color: rgb(32, 32, 32);
    --secondary-color: rgb(192, 125, 38);
-  color: white;
-  background-color: rgb(32, 32, 32);
+   color: white;
+   background-color: rgb(32, 32, 32);
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  transition: background-color 0.25s ease, color 0.25 ease;
+}
+
+p {
+  transition: color 1s ease;
 }
