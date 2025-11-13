@@ -1,3 +1,4 @@
+/*
 const projects = [
   {
     id: 'id1',
@@ -43,3 +44,4 @@ export function renderProjectsHTML() {
   document.querySelector('.js-projects-grid')
     .innerHTML = projectHtml;
 }
+*/
