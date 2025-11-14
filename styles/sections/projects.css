@@ -83,7 +83,7 @@
   color: white;
   cursor: pointer;
   background-color: rgb(85, 71, 122);
-  transition: background-color 0.15s;
+  transition: background-color 0.25s, color 0.25s ease, border 1s;
   width: 100%;
 }
 
