@@ -68,8 +68,15 @@
   font-size: var(--font-size-medium);
 }
 
+.buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px ;
+}
+
 .link-button {
-  border: none;
+  border: 2px solid transparent;
+  border-radius: 10px;
   padding: 15px;
   font-size: 16px;
   font-weight: bold;
@@ -81,7 +88,9 @@
 }
 
 .link-button:hover {
-  background-color: rgb(77, 70, 91);
+  background-color: rgb(233, 233, 233);
+  color: purple;
+  border: 2px solid purple;
 }
 
 @media only screen and (max-width: 997px) {

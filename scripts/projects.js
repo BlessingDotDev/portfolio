@@ -5,7 +5,8 @@ const projects = [
     image: './images/projects/mpahla.webp',
     description: 'A fully responsive mock e-commerce site built with JavaScript. includes dynamic pages for categories. products, products details with size options, and function cart.',
     gitHubLink: 'https://github.com/BlessingDotDev/project-ecommerce-site.git',
-    deployed: false
+    siteLink: 'https://blessingdotdev.github.io/project-ecommerce-site/',
+    deployed: true
   },
   {
     id: 'id2',
@@ -13,6 +14,7 @@ const projects = [
     image: './images/projects/anime-quotes.webp',
     description: 'Reponsive site built with JavaScript.Powered by Jikan API for Anime Data. <i>(Site still progress)</i>.',
     gitHubLink: 'https://github.com/BlessingDotDev/anime-quotes.git',
+    siteLink: 'https://blessingdotdev.github.io/anime-quotes/',
     deployed: true
   }
 ];
@@ -30,11 +32,18 @@ export function renderProjectsHTML() {
           <p class="project-description">
             ${project.description}
           </p>
-          <a href="${project.gitHubLink}" target="_blank">
-            <button class="link-button">
-              View code on Github
-            </button>
-          </a>
+          <div class="buttons-container">
+            <a href="${project.gitHubLink}" target="_blank">
+              <button class="link-button">
+                View code on Github
+              </button>
+            </a>
+            <a href="${project.siteLink}" target="_blank">
+              <button class="link-button">
+                Visit Website
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     `
