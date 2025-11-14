@@ -28,7 +28,6 @@
   height: auto;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  min-height: 50%;
 }
 
 .project-image {
@@ -104,9 +103,17 @@
     grid-template-columns: 1fr;
   }
 
+  .project-container {
+    height: 20rem;
+  }
+
   .project-description {
     color: white;
     padding: 15px;
     font-size: var(--font-size-small);
+  }
+
+  .link-button {
+    font-size: 14px;
   }
 }
