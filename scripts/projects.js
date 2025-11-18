@@ -35,7 +35,7 @@ export function renderProjectsHTML() {
           <div class="buttons-container">
             <a href="${project.gitHubLink}" target="_blank">
               <button class="link-button">
-                View code on Github
+                Code on Github
               </button>
             </a>
             <a href="${project.siteLink}" target="_blank">
