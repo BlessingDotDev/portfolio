@@ -16,6 +16,15 @@ const projects = [
     gitHubLink: 'https://github.com/BlessingDotDev/anime-quotes.git',
     siteLink: 'https://blessingdotdev.github.io/anime-quotes/',
     deployed: true
+  },
+  {
+    id: 'id3',
+    name: 'mock-ul-website',
+    image: './images/projects/ul.png',
+    description: 'Reponsive mock website of unversity of limpopo. <i>(Site still progress)</i>.',
+    gitHubLink: 'https://github.com/BlessingDotDev/mock-ul-website.git',
+    siteLink: 'https://blessingdotdev.github.io/mock-ul-website/',
+    deployed: true
   }
 ];
 
