@@ -34,8 +34,7 @@ export function renderProjectsHTML() {
   projects.forEach(project => {
     projectHtml += `
       <div class="project-container">
-        <img class="project-image" 
-          src=${project.image}
+ject.image}
           >
         <div class="overlay display-overlay">
           <p class="project-description">

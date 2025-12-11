@@ -95,6 +95,11 @@
 .tech-box {
   text-align: center;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.tech-box:hover {
+  transform: scale(1.15);
 }
 
 .tech-logo {
