@@ -1,3 +1,5 @@
+import { revealStaggered } from './reveal.js';
+
 const technologies = [
   { name: 'HTML5', logo: './images/logos/html.png' },
   { name: 'CSS3', logo: './images/logos/css-3.png' },
@@ -25,4 +27,11 @@ export function renderTechBoxes() {
   if (techFlexContainer) {
     techFlexContainer.innerHTML = techHtml;
   }
+}
+
+// Apply reveal to tech boxes after render
+export function renderTechBoxesAndReveal() {
+  renderTechBoxes();
+  // small stagger for tech icons
+  revealStaggered('.tech-box', { stagger: 80, baseDelay: 0, threshold: 0.05 });
 }

@@ -23,6 +23,20 @@
   letter-spacing: 2px;
 }
 
+/* reveal initial state for introduction and image */
+.introduction,
+.image-container {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: transform 0.45s ease, opacity 0.45s ease;
+}
+
+.introduction.animate,
+.image-container.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .big-words {
   font-size: var(--font-size-larger);
   font-weight: bold;
@@ -96,6 +110,17 @@
   text-align: center;
   cursor: pointer;
   transition: transform 0.3s ease;
+}
+
+/* tech boxes reveal */
+.tech-box {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+.tech-box.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .tech-box:hover {

@@ -1,3 +1,5 @@
+import { revealStaggered } from './reveal.js';
+
 const projects = [
   {
     id: 'id1',
@@ -73,27 +75,13 @@ export function renderProjectsHTML(config = {}) {
   const grid = document.querySelector('.js-projects-grid');
   if (grid) grid.innerHTML = projectHtml;
 
-  // start scroll-triggered animation using computed config
-  animateProjectsOnScroll(cfg);
+  // start scroll-triggered animation using reusable reveal
+  // revealStaggered will stagger based on `data-index`
+  // use the shared reveal function
+  revealStaggered('.project-container', {
+    stagger: cfg.stagger,
+    baseDelay: cfg.baseDelay,
+    threshold: cfg.threshold
+  });
 }
-function animateProjectsOnScroll(cfg) {
-  const projectContainers = document.querySelectorAll('.project-container');
-
-  if (!projectContainers.length) return;
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const idx = Number(entry.target.dataset.index) || 0;
-        // apply baseDelay + index * stagger so we can configure entrance timing
-        const delay = (cfg.baseDelay || 0) + (idx * (cfg.stagger || 0));
-        setTimeout(() => {
-          entry.target.classList.add('animate');
-        }, delay);
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: (cfg.threshold !== undefined ? cfg.threshold : 0.12) });
-
-  projectContainers.forEach(container => observer.observe(container));
-}
+  // Local fallback removed — project animations now use `revealStaggered` from `reveal.js`.
