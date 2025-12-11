@@ -33,5 +33,5 @@ export function renderTechBoxes() {
 export function renderTechBoxesAndReveal() {
   renderTechBoxes();
   // small stagger for tech icons
-  revealStaggered('.tech-box', { stagger: 80, baseDelay: 0, threshold: 0.05 });
+  revealStaggered('.tech-box', { stagger: 150, baseDelay: 0, threshold: 0.05});
 }
