@@ -26,6 +26,25 @@
   position: relative;
 
   height: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 0.45s ease, opacity 0.45s ease;
+}
+
+.project-container.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-container:hover {
+  transform: scale(1.02);
+  transition: transform 0.25s ease;
+  z-index: 2;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .project-image {
@@ -105,7 +124,15 @@
 
   .project-container {
     height: 20rem;
+    /* shorten transition duration on small screens for snappier animation */
+    transition: transform 0.28s ease, opacity 0.28s ease;
   }
+
+  /* disable hover scaling on touch devices to avoid jumpy behavior */
+  .project-container:hover {
+    transform: none;
+  }
+  
 
   .project-description {
     color: white;

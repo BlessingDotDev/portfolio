@@ -28,14 +28,27 @@ const projects = [
   }
 ];
 
-export function renderProjectsHTML() {
+export const projectAnimationConfig = {
+  baseDelay: 0, // milliseconds before the first card animates
+  stagger: 120, // milliseconds between each card's entrance on desktop
+  threshold: 0.12 // intersection threshold
+};
+
+export function renderProjectsHTML(config = {}) {
+  // merge defaults with provided config
+  const isMobile = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(max-width: 600px)').matches;
+  const cfg = Object.assign({}, projectAnimationConfig, config);
+  // reduce stagger on small screens for snappier entrance
+  if (isMobile && cfg.stagger === projectAnimationConfig.stagger) {
+    cfg.stagger = 60;
+    cfg.threshold = 0.05;
+  }
   let projectHtml = '';
 
-  projects.forEach(project => {
+  projects.forEach((project, index) => {
     projectHtml += `
-      <div class="project-container">
-        <img class="project-image" src=
-          ${project.image}>
+      <div class="project-container" data-index="${index}">
+        <img class="project-image" src="${project.image}" alt="${project.name}">
         <div class="overlay display-overlay">
           <p class="project-description">
             ${project.description}
@@ -54,9 +67,33 @@ export function renderProjectsHTML() {
           </div>
         </div>
       </div>
-    `
+    `;
   });
 
-  document.querySelector('.js-projects-grid')
-    .innerHTML = projectHtml;
+  const grid = document.querySelector('.js-projects-grid');
+  if (grid) grid.innerHTML = projectHtml;
+
+  // start scroll-triggered animation using computed config
+  animateProjectsOnScroll(cfg);
+}
+function animateProjectsOnScroll(cfg) {
+  const projectContainers = document.querySelectorAll('.project-container');
+
+  if (!projectContainers.length) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const idx = Number(entry.target.dataset.index) || 0;
+        // apply baseDelay + index * stagger so we can configure entrance timing
+        const delay = (cfg.baseDelay || 0) + (idx * (cfg.stagger || 0));
+        setTimeout(() => {
+          entry.target.classList.add('animate');
+        }, delay);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: (cfg.threshold !== undefined ? cfg.threshold : 0.12) });
+
+  projectContainers.forEach(container => observer.observe(container));
 }
