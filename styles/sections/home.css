@@ -86,14 +86,15 @@
 
 .tech-flex {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
 
   width: 90%;
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 .tech-box {
   text-align: center;
+  cursor: pointer;
 }
 
 .tech-logo {
@@ -200,9 +201,9 @@
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .tech-flex {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
     row-gap: 30px;
     max-width: 300px;
   }
