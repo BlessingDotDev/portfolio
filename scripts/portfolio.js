@@ -7,13 +7,13 @@ activatePreferedMode();
 renderProjectsHTML();
 renderTechBoxesAndReveal();
 
-// reveal some single elements
+// reveal some single elements with longer delays for smooth, staggered effect
 revealOnce('.introduction', { baseDelay: 0, threshold: 0.12 });
-revealOnce('.image-container', { baseDelay: 50, threshold: 0.12 });
+revealOnce('.image-container', { baseDelay: 150, threshold: 0.12 });
 
-// about me
+// about me with deliberate stagger
 revealOnce('.about-me-text', { baseDelay: 0, threshold: 0.12 });
-revealOnce('.about-me-image', { baseDelay: 50, threshold: 0.12 });
+revealOnce('.about-me-image', { baseDelay: 150, threshold: 0.12 });
 
-// reveal footer links with a small stagger
-revealStaggered('.footer-container a', { stagger: 80, baseDelay: 0, threshold: 0.05 });
+// reveal footer links with slower stagger
+revealStaggered('.footer-container a', { stagger: 150, baseDelay: 0, threshold: 0.05 });
