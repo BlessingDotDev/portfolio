@@ -21,6 +21,15 @@ const projects = [
   },
   {
     id: 'id3',
+    name: 'tradingview-clone',
+    image: './images/projects/trading.png',
+    description: 'A lightweight TradingView-inspired charting application built with plain HTML, CSS, and JavaScript (ES modules). This project demonstrates interactive financial charting, technical indicators, modular frontend architecture, and API data adaptation—without relying on external frameworks.',
+    gitHubLink: 'https://github.com/BlessingDotDev/tradingview.git',
+    siteLink: 'https://blessingdotdev.github.io/tradingview/',
+    deployed: true
+  },
+  {
+    id: 'id4',
     name: 'mock-ul-website',
     image: './images/projects/ul.png',
     description: 'Reponsive mock website of unversity of limpopo. <i>(Site still progress)</i>.',
