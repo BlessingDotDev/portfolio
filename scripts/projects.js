@@ -12,9 +12,9 @@ const projects = [
   },
   {
     id: 'id2',
-    name: 'anime-quotes',
+    name: 'anime-characters',
     image: './images/projects/anime-quotes.webp',
-    description: 'Reponsive site built with JavaScript.Powered by Jikan API for Anime Data. <i>(Site still progress)</i>.',
+    description: 'Reponsive site built with JavaScript.Powered by Jikan API for Anime Data and Anime characters.',
     gitHubLink: 'https://github.com/BlessingDotDev/anime-quotes.git',
     siteLink: 'https://blessingdotdev.github.io/anime-quotes/',
     deployed: true
