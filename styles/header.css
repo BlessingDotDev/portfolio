@@ -1,3 +1,11 @@
+.header-logo-container {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  color: white;
+  display: none;
+}
+
 .header-container {
   width: 100%;
   background-color: var(--primary-color);
@@ -8,7 +16,8 @@
   align-items: center;
 }
 
-.header-name {
+.header-name,
+.logo-name {
   font-size: var(--font-size-medium);
   letter-spacing: 3px;
   pointer-events: none;
@@ -60,16 +69,25 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .header-logo-container {
+    display: block;
+  }
+
+  .logo-name {
+    letter-spacing: 1.5px;
+  }
+
   .header-name {
     display: none;
   }
-
+  
   .nav-container {
     flex: 1;
     justify-content: space-evenly;
     column-gap: 0px;
     padding-right: 0;
   }
+
 }
 
 @media (min-width: 600px) {
