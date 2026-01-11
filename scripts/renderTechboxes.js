@@ -18,7 +18,7 @@ export function renderTechBoxes() {
     techHtml += `
       <div class="tech-box">
         <img class="tech-logo" src="${tech.logo}" alt="${tech.name.toLowerCase()} logo">
-        <div class="logo-name">${tech.name}</div>
+        <div class="tech-logo-name">${tech.name}</div>
       </div>
     `;
   });

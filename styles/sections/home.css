@@ -131,7 +131,7 @@
   height: 50px;
 }
 
-.logo-name {
+.tech-logo-name {
   font-size: 13px;
   padding-top: 4px;
   pointer-events: none;
@@ -225,7 +225,7 @@
     height: 30px;
   }
 
-  .logo-name {
+  .tech-logo-name {
     font-size: 14px;
   }
 
