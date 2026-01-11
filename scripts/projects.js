@@ -27,15 +27,6 @@ const projects = [
     gitHubLink: 'https://github.com/BlessingDotDev/tradingview.git',
     siteLink: 'https://blessingdotdev.github.io/tradingview/',
     deployed: true
-  },
-  {
-    id: 'id4',
-    name: 'mock-ul-website',
-    image: './images/projects/ul.png',
-    description: 'Reponsive mock website of unversity of limpopo. <i>(Site still progress)</i>.',
-    gitHubLink: 'https://github.com/BlessingDotDev/mock-ul-website.git',
-    siteLink: 'https://blessingdotdev.github.io/mock-ul-website/',
-    deployed: true
   }
 ];
 
