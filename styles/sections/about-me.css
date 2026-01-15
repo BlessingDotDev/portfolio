@@ -2,7 +2,7 @@
   background-image: linear-gradient(to left, var(--primary-start-color), var(--secondary-color));
 
   display: grid;
-  grid-template-columns: 300px 400px;
+  grid-template-columns: 300px 500px;
   justify-content: center;
   align-items: center;
   column-gap: 3.75rem;

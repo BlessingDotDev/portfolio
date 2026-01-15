@@ -7,6 +7,8 @@ const technologies = [
   { name: 'Responsive', logo: './images/logos/devices.png' },
   { name: 'React', logo: './images/logos/React.png' },
   { name: 'Node.js', logo: './images/logos/Node.js.png' },
+  { name: 'Express.js', logo: './images/logos/Express.png' },
+  { name: 'MongoDB', logo: './images/logos/MongoDB.png' },
   { name: 'PHP', logo: './images/logos/php.png' },
   { name: 'Python', logo: './images/logos/python.png' }
 ];
