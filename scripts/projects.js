@@ -8,7 +8,13 @@ const projects = [
     description: 'A fully responsive mock e-commerce site built with JavaScript. includes dynamic pages for categories. products, products details with size options, and function cart.',
     gitHubLink: 'https://github.com/BlessingDotDev/project-ecommerce-site.git',
     siteLink: 'https://blessingdotdev.github.io/project-ecommerce-site/',
-    deployed: true
+    deployed: true,
+    tech: [
+      {name: 'HTML5', logo: './images/logos/html.png' },
+      {name: 'CSS3', logo: './images/logos/css-3.png' },
+      {name: 'Javascript', logo: './images/logos/js.png' },
+      {name: 'devices', logo: './images/logos/devices.png' }
+    ]
   },
   {
     id: 'id2',
@@ -17,7 +23,13 @@ const projects = [
     description: 'Reponsive site built with JavaScript.Powered by Jikan API for Anime Data and Anime characters.',
     gitHubLink: 'https://github.com/BlessingDotDev/anime-quotes.git',
     siteLink: 'https://blessingdotdev.github.io/anime-quotes/',
-    deployed: true
+    deployed: true,
+    tech: [
+      {name: 'HTML5', logo: './images/logos/html.png' },
+      {name: 'CSS3', logo: './images/logos/css-3.png' },
+      {name: 'Javascript', logo: './images/logos/js.png' },
+      {name: 'devices', logo: './images/logos/devices.png' }
+    ]
   },
   {
     id: 'id3',
@@ -26,7 +38,13 @@ const projects = [
     description: 'A lightweight TradingView-inspired charting application built with plain HTML, CSS, and JavaScript (ES modules). This project demonstrates interactive financial charting, technical indicators, modular frontend architecture, and API data adaptation—without relying on external frameworks.',
     gitHubLink: 'https://github.com/BlessingDotDev/tradingview.git',
     siteLink: 'https://blessingdotdev.github.io/tradingview/',
-    deployed: true
+    deployed: true,
+    tech: [
+      {name: 'HTML5', logo: './images/logos/html.png' },
+      {name: 'CSS3', logo: './images/logos/css-3.png' },
+      {name: 'Javascript', logo: './images/logos/js.png' },
+      {name: 'devices', logo: './images/logos/devices.png' }
+    ]
   }
 ];
 
@@ -48,6 +66,14 @@ export function renderProjectsHTML(config = {}) {
   let projectHtml = '';
 
   projects.forEach((project, index) => {
+    let techImgHtml = '';
+
+    project.tech.forEach(tech => {
+      techImgHtml += `
+        <img src="${tech.logo}" alt="${tech.name}">
+      `;
+    })
+
     projectHtml += `
       <div class="project-container" data-index="${index}">
         <img class="project-image" src="${project.image}" alt="${project.name}">
@@ -67,6 +93,9 @@ export function renderProjectsHTML(config = {}) {
               </button>
             </a>
           </div>
+        </div>
+        <div class="technologies-used">
+          ${techImgHtml}
         </div>
       </div>
     `;
