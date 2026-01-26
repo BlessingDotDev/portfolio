@@ -3,14 +3,17 @@ import { revealStaggered } from './reveal.js';
 const projects = [
   {
     id: 'id1',
-    name: 'Mpahla',
-    image: './images/projects/mpahla.webp',
-    description: 'A fully responsive mock e-commerce site built with JavaScript. includes dynamic pages for categories. products, products details with size options, and function cart.',
-    gitHubLink: 'https://github.com/BlessingDotDev/project-ecommerce-site.git',
-    siteLink: 'https://blessingdotdev.github.io/project-ecommerce-site/',
+    name: 'react-ecommerce-project',
+    image: './images/projects/mpahla-pic.png',
+    description: 'E-commerce Platform (React, Vite, Node.js, MongoDB) Developed a full-stack, responsive e-commerce application with a custom RESTful API backend. Implemented secure user authentication, dynamic product catalog, shopping cart, and order tracking functionality. Optimized for performance and scalability, demonstrating proficiency in modern frontend frameworks, backend API design, and database integration.',
+    gitHubLink: 'https://github.com/BlessingDotDev/react-ecommerce-mpahla.git',
+    siteLink: 'https://github.com/BlessingDotDev/mpahla-ecommerce-backend.git',
     deployed: true,
     tech: [
-      {name: 'HTML5', logo: './images/logos/html.png' },
+      {name: 'react', logo: './images/logos/React.png' },
+      {name: 'node.js', logo: './images/logos/Node.js.png' },
+      {name: 'mongodb', logo: './images/logos/MongoDb.png' },
+      {name: 'express', logo: './images/logos/Express.png' },
       {name: 'CSS3', logo: './images/logos/css-3.png' },
       {name: 'Javascript', logo: './images/logos/js.png' },
       {name: 'devices', logo: './images/logos/devices.png' }
@@ -31,8 +34,23 @@ const projects = [
       {name: 'devices', logo: './images/logos/devices.png' }
     ]
   },
+   {
+    id: 'id13',
+    name: 'Mpahla',
+    image: './images/projects/mpahla.webp',
+    description: 'A fully responsive mock e-commerce site built with JavaScript. includes dynamic pages for categories. products, products details with size options, and function cart.',
+    gitHubLink: 'https://github.com/BlessingDotDev/project-ecommerce-site.git',
+    siteLink: 'https://blessingdotdev.github.io/project-ecommerce-site/',
+    deployed: true,
+    tech: [
+      {name: 'HTML5', logo: './images/logos/html.png' },
+      {name: 'CSS3', logo: './images/logos/css-3.png' },
+      {name: 'Javascript', logo: './images/logos/js.png' },
+      {name: 'devices', logo: './images/logos/devices.png' }
+    ]
+  },
   {
-    id: 'id3',
+    id: 'id4',
     name: 'tradingview-clone',
     image: './images/projects/trading.png',
     description: 'A lightweight TradingView-inspired charting application built with plain HTML, CSS, and JavaScript (ES modules). This project demonstrates interactive financial charting, technical indicators, modular frontend architecture, and API data adaptation—without relying on external frameworks.',
