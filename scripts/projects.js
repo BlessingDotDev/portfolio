@@ -12,7 +12,7 @@ const projects = [
     tech: [
       {name: 'react', logo: './images/logos/React.png' },
       {name: 'node.js', logo: './images/logos/Node.js.png' },
-      {name: 'mongodb', logo: './images/logos/MongoDb.png' },
+      {name: 'mongodb', logo: './images/logos/MongoDB.png' },
       {name: 'express', logo: './images/logos/Express.png' },
       {name: 'CSS3', logo: './images/logos/css-3.png' },
       {name: 'Javascript', logo: './images/logos/js.png' },
