@@ -5,7 +5,7 @@ const projects = [
     id: 'id1',
     name: 'react-ecommerce-project',
     image: './images/projects/mpahla-pic.png',
-    description: 'E-commerce Platform (React, Vite, Node.js, MongoDB) Developed a full-stack, responsive e-commerce application with a custom RESTful API backend. Implemented secure user authentication, dynamic product catalog, shopping cart, and order tracking functionality. Optimized for performance and scalability, demonstrating proficiency in modern frontend frameworks, backend API design, and database integration.',
+    description: 'Full stack E-commerce Platform (React, Vite, Node.js, MongoDB), Deployed with render(backend) and vercel(frontend) application with a custom RESTful API backend. Optimized for performance and scalability, backend API design, and database integration.',
     gitHubLink: 'https://github.com/BlessingDotDev/mpahla-ecommerce-frontend.git',
     siteLink: 'https://mpahla-frontend.vercel.app/',
     deployed: true,
