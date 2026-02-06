@@ -75,6 +75,11 @@
 
   .logo-name {
     letter-spacing: 1.5px;
+    font-size: var(--font-size-small);
+  }
+
+  .logo-name .first-letter {
+    font-size: var(--font-size-base);
   }
 
   .header-name {
