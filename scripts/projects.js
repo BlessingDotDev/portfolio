@@ -2,6 +2,21 @@ import { revealStaggered } from './reveal.js';
 
 const projects = [
   {
+    id: 'id113',
+    name: 'calibration-curve',
+    image: './images/projects/calibation-curve.png',
+    description: 'A professional calibration curve tool for analytical chemists and laboratory professionals. Users can enter calibration data, calculate regression, determine unknown sample concentrations, and generate professional PDF reports.',
+    gitHubLink: 'https://github.com/BlessingDotDev/calibration-curve-tool.git',
+    siteLink: 'https://calibration-curve-tool.vercel.app/',
+    deployed: true,
+    tech: [
+      {name: 'react', logo: './images/logos/React.png' },
+      {name: 'CSS3', logo: './images/logos/css-3.png' },
+      {name: 'Javascript', logo: './images/logos/js.png' },
+      {name: 'devices', logo: './images/logos/devices.png' }
+    ]
+  },
+  {
     id: 'id1',
     name: 'react-ecommerce-project',
     image: './images/projects/mpahla-pic.png',
